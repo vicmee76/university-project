@@ -4,14 +4,12 @@ import React, { useEffect, useState } from 'react'
 const List = ({ universities }) => {
     return (
         <>
-
             <ol class="list-group list-group-numbered text-start">
                 {universities.map((university, index) => (
                     <li class="list-group-item" key={index}>{university.name}</li>
                 ))}
 
             </ol>
-
         </>
     );
 }
@@ -50,8 +48,6 @@ const Universities = () => {
 
         setLoading(false);
     }
-
-
 
     return (
         <div className='universities-container'>

@@ -12,7 +12,7 @@ const Countdown = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if(counter === 0) {
+            if (counter === 0) {
                 setTimerActions({ start: false, pause: false })
                 return;
             }
@@ -53,9 +53,9 @@ const Countdown = () => {
                 <h1>{counter}</h1>
             </div>
             <div className='counter-field-wrapper form-group'>
-               
+
                 <input type='number' className='' id='counter' onChange={e => setCounter(e.target.value)} />
-               
+
             </div>
             <br></br>
             <div className='counter-actions'>
